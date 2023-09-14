@@ -28,13 +28,18 @@ gitea_repos = set(repo['name'] for repo in response.json())
 # Identify repos not yet mirrored on Gitea
 to_mirror = {name: url for name, url in github_repos.items() if name not in gitea_repos}
 
+# Fetch the Gitea User ID
+response = requests.get(f"https://git.veen.world/api/v1/users/{GITEA_USER}", headers=HEADERS)
+response.raise_for_status()
+gitea_user_id = response.json().get("id")
+
 for name, url in to_mirror.items():
     data = {
-        "clone_url": url,
+        "clone_addr": url,
         "mirror": True,
         "private": True,
         "repo_name": name,
-        "uid": GITEA_USER
+        "uid": gitea_user_id
     }
     response = requests.post(f"https://git.veen.world/api/v1/repos/migrate", headers=HEADERS, json=data)
     if response.status_code == 201:
