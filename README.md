@@ -1,7 +1,3 @@
-Certainly! Below is an optimized version of the README.md:
-
----
-
 # github-to-gitea-mirror
 
 Effortlessly synchronize your GitHub repositories to Gitea. `github-to-gitea-mirror` seamlessly detects GitHub repositories not present on Gitea and mirrors them, ensuring your repositories are consistent across both platforms.
@@ -38,7 +34,3 @@ python your_script_name.py
 ## 📜 License
 
 Licensed under the GNU Affero General Public License v3.0. Please refer to the `LICENSE` file for complete details.
-
----
-
-This optimized README is more concise and has clearer instructions for setup and usage. I've also integrated some emojis for a modern touch, which can make the README more engaging and organized.
