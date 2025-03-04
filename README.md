@@ -1,5 +1,5 @@
 # GitHub to Gitea Mirror 🚀🔄
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](./LICENSE)[![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)[![GitHub Stars](https://img.shields.io/github/stars/kevinveenbirkenbach/github-to-gitea-mirror)](https://github.com/kevinveenbirkenbach/github-to-gitea-mirror/stargazers)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](./LICENSE) [![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/) [![GitHub Stars](https://img.shields.io/github/stars/kevinveenbirkenbach/github-to-gitea-mirror)](https://github.com/kevinveenbirkenbach/github-to-gitea-mirror/stargazers)
 
 **GitHub to Gitea Mirror** automatically detects repositories on GitHub that are not yet mirrored on Gitea and mirrors them—ensuring that your codebase remains consistent across both platforms.
 
