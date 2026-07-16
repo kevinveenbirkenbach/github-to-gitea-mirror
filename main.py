@@ -42,7 +42,7 @@ for name, url in to_mirror.items():
         "repo_name": name,
         "uid": gitea_user_id
     }
-    response = requests.post(f"https://git.veen.world/api/v1/repos/migrate", headers=HEADERS, json=data)
+    response = requests.post("https://git.veen.world/api/v1/repos/migrate", headers=HEADERS, json=data)
     if response.status_code == 201:
         print(f"{name} was successfully mirrored.")
     else:
